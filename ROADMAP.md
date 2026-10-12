@@ -1,0 +1,253 @@
+# Roadmap
+
+*Generated on 2026-10-12 for game version 1.128.90.1030 from `packs.tsv`, the decoded patch data and the text of every chapter. Do not edit by hand.*
+
+The book reads one install of the game. The Python code for every pack ships with the base game, so every pack's scripts are already decompiled and covered by the chapters. What differs from pack to pack is the tuning (the numbers and records the code runs on) and the content files, and those the book can only observe live for a pack that is installed.
+
+## Where the book stands
+
+| Level | What the book has read | Packs |
+|---|---|---|
+| Read in full | installed: code, live tuning, client and simulation packages, string tables | 9 |
+| Patch tuning read | not installed: code, plus the pack's tuning decoded from its `Delta/` patch data, which never runs here and is never counted as live | 72 |
+| Patch tuning not decoded | not installed: code only; the patch data carries tuning, but only in its preload package, which was not decoded | 3 |
+| No tuning in patch data | not installed: code only; the patch data holds content (CAS parts, build objects, strings) and no tuning | 34 |
+| All | | 118 |
+
+Read in full: BASE_GAME (Base Game), EP04 (Cats & Dogs), EP06 (Get Famous), EP09 (Eco Lifestyle), EP12 (High School Years), GP04 (Vampires), GP12 (Werewolves), SP01 (Luxury Party), SP42 (Grunge Revival).
+
+## What comes next
+
+1. **Decode the preload-only patch tuning** of SP57 (Cozy Kitsch), SP70 (SpongeBob Kid's Room), SP82 (Yard Charm). It needs no new install: the tuning is already on disk, in a package the decoder was not pointed at.
+2. **Install and read more packs.** A pack can only be read live once it is installed. The order below puts first the packs the book already describes most often from their patch data (the number of chapter sections that name the pack), so each install turns the most "patch data, pack not installed" text into live, observed text. The order is a proposal and may change.
+3. **Recount after every batch.** The live tuning is the base game's delta build plus each installed pack's delta build, so installing a pack changes live counts in every chapter, not only in the pack's own sections. Packs are best added in batches, each followed by one recount of the whole book and a new check line under every chapter title. A game update has the same effect.
+4. **Other gaps** (failed decompiles, the native engine read only from its strings, file kinds not yet indexed) are listed in [9.03 Coverage and known gaps](src/9.03-coverage-and-gaps.md).
+
+### Proposed order for installing packs
+
+| Order | Pack | Name | Type | Sections | Chapters |
+|---|---|---|---|---|---|
+| 1 | EP21 | Royalty & Legacy | Expansion | 67 | 20 |
+| 2 | EP05 | Seasons | Expansion | 57 | 13 |
+| 3 | EP19 | Enchanted by Nature | Expansion | 57 | 16 |
+| 4 | EP17 | Life & Death | Expansion | 50 | 17 |
+| 5 | EP18 | Businesses & Hobbies | Expansion | 43 | 15 |
+| 6 | EP01 | Get To Work | Expansion | 42 | 16 |
+| 7 | EP20 | Adventure Awaits | Expansion | 42 | 14 |
+| 8 | EP07 | Island Living | Expansion | 41 | 14 |
+| 9 | EP08 | Discover University | Expansion | 41 | 16 |
+| 10 | EP13 | Growing Together | Expansion | 35 | 11 |
+| 11 | EP11 | Cottage Living | Expansion | 34 | 17 |
+| 12 | EP10 | Snowy Escape | Expansion | 32 | 10 |
+| 13 | EP03 | City Living | Expansion | 31 | 12 |
+| 14 | EP15 | For Rent | Expansion | 27 | 9 |
+| 15 | GP06 | Jungle Adventure | Game | 26 | 5 |
+| 16 | EP14 | Horse Ranch | Expansion | 24 | 10 |
+| 17 | EP02 | Get Together | Expansion | 23 | 8 |
+| 18 | GP08 | Realm of Magic | Game | 20 | 9 |
+| 19 | GP09 | Journey to Batuu | Game | 19 | 9 |
+| 20 | EP16 | Lovestruck | Expansion | 17 | 8 |
+| 21 | GP01 | Outdoor Retreat | Game | 15 | 6 |
+| 22 | GP03 | Dine Out | Game | 14 | 3 |
+| 23 | SP49 | Crystal Creations | Stuff | 14 | 5 |
+| 24 | GP07 | StrangerVille | Game | 9 | 5 |
+| 25 | SP22 | Bust The Dust | Stuff | 8 | 3 |
+| 26 | GP05 | Parenthood | Game | 7 | 3 |
+| 27 | SP13 | Laundry Day | Stuff | 6 | 2 |
+| 28 | GP02 | Spa Day | Game | 3 | 3 |
+| 29 | GP10 | Dream Home Decorator | Game | 3 | 1 |
+| 30 | FP01 | Holiday | Free | 3 | 2 |
+| 31 | SP16 | Tiny Living | Stuff | 3 | 2 |
+| 32 | SP57 | Cozy Kitsch | Stuff | 3 | 2 |
+| 33 | SP70 | SpongeBob Kid's Room | Stuff | 3 | 2 |
+| 34 | SP82 | Yard Charm | Stuff | 3 | 2 |
+| 35 | SP17 | Nifty Knitting | Stuff | 2 | 1 |
+| 36 | SP18 | Paranormal | Stuff | 2 | 1 |
+| 37 | SP06 | Romantic Garden | Stuff | 1 | 1 |
+| 38 | SP09 | Vintage Glamour | Stuff | 1 | 1 |
+| 39 | SP14 | My First Pet | Stuff | 1 | 1 |
+| 40 | SP24 | Fashion Street | Stuff | 1 | 1 |
+| 41 | GP11 | My Wedding Stories | Game | 0 | 0 |
+| 42 | SP02 | Perfect Patio | Stuff | 0 | 0 |
+| 43 | SP03 | Cool Kitchen | Stuff | 0 | 0 |
+| 44 | SP04 | Spooky Stuff | Stuff | 0 | 0 |
+| 45 | SP05 | Movie Hangout | Stuff | 0 | 0 |
+| 46 | SP07 | Kids Room | Stuff | 0 | 0 |
+| 47 | SP08 | Backyard | Stuff | 0 | 0 |
+| 48 | SP10 | Bowling Night | Stuff | 0 | 0 |
+| 49 | SP11 | Fitness | Stuff | 0 | 0 |
+| 50 | SP12 | Toddler | Stuff | 0 | 0 |
+| 51 | SP15 | Moschino | Stuff | 0 | 0 |
+| 52 | SP23 | Courtyard Oasis | Stuff | 0 | 0 |
+| 53 | SP25 | Industrial Loft | Stuff | 0 | 0 |
+| 54 | SP31 | Décor to the Max | Stuff | 0 | 0 |
+| 55 | SP33 | Little Campers | Stuff | 0 | 0 |
+| 56 | SP36 | Pastel Pop | Stuff | 0 | 0 |
+| 57 | SP37 | Everyday Clutter | Stuff | 0 | 0 |
+| 58 | SP39 | Bathroom Clutter | Stuff | 0 | 0 |
+| 59 | SP41 | Basement Treasures | Stuff | 0 | 0 |
+| 60 | SP43 | Book Nook | Stuff | 0 | 0 |
+| 61 | SP45 | Modern Luxe | Stuff | 0 | 0 |
+| 62 | SP46 | Home Chef Hustle | Stuff | 0 | 0 |
+| 63 | SP51 | Party Essentials | Stuff | 0 | 0 |
+| 64 | SP52 | Riviera Retreat | Stuff | 0 | 0 |
+| 65 | SP53 | Cozy Bistro | Stuff | 0 | 0 |
+| 66 | SP55 | Storybook Nursery | Stuff | 0 | 0 |
+| 67 | SP58 | Comfy Gamer | Stuff | 0 | 0 |
+| 68 | SP59 | Secret Sanctuary | Stuff | 0 | 0 |
+| 69 | SP60 | Casanova Cave | Stuff | 0 | 0 |
+| 70 | SP63 | Sleek Bathroom | Stuff | 0 | 0 |
+| 71 | SP65 | Restoration Workshop | Stuff | 0 | 0 |
+| 72 | SP67 | Kitchen Clutter | Stuff | 0 | 0 |
+| 73 | SP68 | SpongeBob's House | Stuff | 0 | 0 |
+| 74 | SP75 | Wonderland Playroom | Stuff | 0 | 0 |
+| 75 | SP77 | Tea Time Solarium | Stuff | 0 | 0 |
+
+Last, the 34 stuff packs whose patch data holds no tuning and which no chapter names yet (mostly kits of CAS parts and build objects): reading them would add content counts and no new systems. SP20 (Throwback Fit), SP21 (Country Kitchen), SP26 (Incheon Arrivals), SP28 (Modern Menswear), SP29 (Blooming Rooms), SP30 (Carnaval Streetwear), SP32 (Moonlight Chic), SP34 (First Fits), SP35 (Desert Luxe), SP38 (Simtimates Collection), SP40 (Greenhouse Haven), SP44 (Poolside Splash), SP47 (Castle Estate), SP48 (Goth Galore), SP50 (Urban Homage), SP54 (Artist Studio), SP56 (Sweet Slumber Party), SP61 (Refined Living Room), SP62 (Business Chic), SP64 (Sweet Allure), SP66 (Golden Years), SP69 (Autumn Apparel), SP71 (Grange Mudroom), SP72 (Essential Glam), SP73 (Modern Retreat), SP74 (Garden to Table), SP76 (Silver Screen Style), SP78 (Lady Bridgerton's Masquerade Ball Fashion), SP79 (Lady Bridgerton's Masquerade Ballroom), SP80 (Music Den), SP81 (Prairie Dreams), SP83 (Mean Girls Capsule), SP84 (Clueless Capsule), SP87 (Coach RePurposed Capsule).
+
+## Every pack
+
+Sections and Chapters count the chapter sections that name the pack's code; [9.04 Pack index](src/9.04-pack-index.md) links each one.
+
+### Base game
+
+| Pack | Name | Level | Sections | Chapters |
+|---|---|---|---|---|
+| BASE_GAME | Base Game | Read in full | 5 | 4 |
+
+### Expansion packs
+
+| Pack | Name | Level | Sections | Chapters |
+|---|---|---|---|---|
+| EP01 | Get To Work | Patch tuning read | 42 | 16 |
+| EP02 | Get Together | Patch tuning read | 23 | 8 |
+| EP03 | City Living | Patch tuning read | 31 | 12 |
+| EP04 | Cats & Dogs | Read in full | 149 | 32 |
+| EP05 | Seasons | Patch tuning read | 57 | 13 |
+| EP06 | Get Famous | Read in full | 97 | 30 |
+| EP07 | Island Living | Patch tuning read | 41 | 14 |
+| EP08 | Discover University | Patch tuning read | 41 | 16 |
+| EP09 | Eco Lifestyle | Read in full | 127 | 35 |
+| EP10 | Snowy Escape | Patch tuning read | 32 | 10 |
+| EP11 | Cottage Living | Patch tuning read | 34 | 17 |
+| EP12 | High School Years | Read in full | 114 | 32 |
+| EP13 | Growing Together | Patch tuning read | 35 | 11 |
+| EP14 | Horse Ranch | Patch tuning read | 24 | 10 |
+| EP15 | For Rent | Patch tuning read | 27 | 9 |
+| EP16 | Lovestruck | Patch tuning read | 17 | 8 |
+| EP17 | Life & Death | Patch tuning read | 50 | 17 |
+| EP18 | Businesses & Hobbies | Patch tuning read | 43 | 15 |
+| EP19 | Enchanted by Nature | Patch tuning read | 57 | 16 |
+| EP20 | Adventure Awaits | Patch tuning read | 42 | 14 |
+| EP21 | Royalty & Legacy | Patch tuning read | 67 | 20 |
+
+### Game packs
+
+| Pack | Name | Level | Sections | Chapters |
+|---|---|---|---|---|
+| GP01 | Outdoor Retreat | Patch tuning read | 15 | 6 |
+| GP02 | Spa Day | Patch tuning read | 3 | 3 |
+| GP03 | Dine Out | Patch tuning read | 14 | 3 |
+| GP04 | Vampires | Read in full | 92 | 29 |
+| GP05 | Parenthood | Patch tuning read | 7 | 3 |
+| GP06 | Jungle Adventure | Patch tuning read | 26 | 5 |
+| GP07 | StrangerVille | Patch tuning read | 9 | 5 |
+| GP08 | Realm of Magic | Patch tuning read | 20 | 9 |
+| GP09 | Journey to Batuu | Patch tuning read | 19 | 9 |
+| GP10 | Dream Home Decorator | Patch tuning read | 3 | 1 |
+| GP11 | My Wedding Stories | Patch tuning read | 0 | 0 |
+| GP12 | Werewolves | Read in full | 103 | 32 |
+
+### Stuff packs
+
+| Pack | Name | Level | Sections | Chapters |
+|---|---|---|---|---|
+| SP01 | Luxury Party | Read in full | 31 | 14 |
+| SP02 | Perfect Patio | Patch tuning read | 0 | 0 |
+| SP03 | Cool Kitchen | Patch tuning read | 0 | 0 |
+| SP04 | Spooky Stuff | Patch tuning read | 0 | 0 |
+| SP05 | Movie Hangout | Patch tuning read | 0 | 0 |
+| SP06 | Romantic Garden | Patch tuning read | 1 | 1 |
+| SP07 | Kids Room | Patch tuning read | 0 | 0 |
+| SP08 | Backyard | Patch tuning read | 0 | 0 |
+| SP09 | Vintage Glamour | Patch tuning read | 1 | 1 |
+| SP10 | Bowling Night | Patch tuning read | 0 | 0 |
+| SP11 | Fitness | Patch tuning read | 0 | 0 |
+| SP12 | Toddler | Patch tuning read | 0 | 0 |
+| SP13 | Laundry Day | Patch tuning read | 6 | 2 |
+| SP14 | My First Pet | Patch tuning read | 1 | 1 |
+| SP15 | Moschino | Patch tuning read | 0 | 0 |
+| SP16 | Tiny Living | Patch tuning read | 3 | 2 |
+| SP17 | Nifty Knitting | Patch tuning read | 2 | 1 |
+| SP18 | Paranormal | Patch tuning read | 2 | 1 |
+| SP20 | Throwback Fit | No tuning in patch data | 0 | 0 |
+| SP21 | Country Kitchen | No tuning in patch data | 0 | 0 |
+| SP22 | Bust The Dust | Patch tuning read | 8 | 3 |
+| SP23 | Courtyard Oasis | Patch tuning read | 0 | 0 |
+| SP24 | Fashion Street | Patch tuning read | 1 | 1 |
+| SP25 | Industrial Loft | Patch tuning read | 0 | 0 |
+| SP26 | Incheon Arrivals | No tuning in patch data | 0 | 0 |
+| SP28 | Modern Menswear | No tuning in patch data | 0 | 0 |
+| SP29 | Blooming Rooms | No tuning in patch data | 0 | 0 |
+| SP30 | Carnaval Streetwear | No tuning in patch data | 0 | 0 |
+| SP31 | Décor to the Max | Patch tuning read | 0 | 0 |
+| SP32 | Moonlight Chic | No tuning in patch data | 0 | 0 |
+| SP33 | Little Campers | Patch tuning read | 0 | 0 |
+| SP34 | First Fits | No tuning in patch data | 0 | 0 |
+| SP35 | Desert Luxe | No tuning in patch data | 0 | 0 |
+| SP36 | Pastel Pop | Patch tuning read | 0 | 0 |
+| SP37 | Everyday Clutter | Patch tuning read | 0 | 0 |
+| SP38 | Simtimates Collection | No tuning in patch data | 0 | 0 |
+| SP39 | Bathroom Clutter | Patch tuning read | 0 | 0 |
+| SP40 | Greenhouse Haven | No tuning in patch data | 0 | 0 |
+| SP41 | Basement Treasures | Patch tuning read | 0 | 0 |
+| SP42 | Grunge Revival | Read in full | 19 | 10 |
+| SP43 | Book Nook | Patch tuning read | 0 | 0 |
+| SP44 | Poolside Splash | No tuning in patch data | 0 | 0 |
+| SP45 | Modern Luxe | Patch tuning read | 0 | 0 |
+| SP46 | Home Chef Hustle | Patch tuning read | 0 | 0 |
+| SP47 | Castle Estate | No tuning in patch data | 0 | 0 |
+| SP48 | Goth Galore | No tuning in patch data | 0 | 0 |
+| SP49 | Crystal Creations | Patch tuning read | 14 | 5 |
+| SP50 | Urban Homage | No tuning in patch data | 0 | 0 |
+| SP51 | Party Essentials | Patch tuning read | 0 | 0 |
+| SP52 | Riviera Retreat | Patch tuning read | 0 | 0 |
+| SP53 | Cozy Bistro | Patch tuning read | 0 | 0 |
+| SP54 | Artist Studio | No tuning in patch data | 0 | 0 |
+| SP55 | Storybook Nursery | Patch tuning read | 0 | 0 |
+| SP56 | Sweet Slumber Party | No tuning in patch data | 0 | 0 |
+| SP57 | Cozy Kitsch | Patch tuning not decoded | 3 | 2 |
+| SP58 | Comfy Gamer | Patch tuning read | 0 | 0 |
+| SP59 | Secret Sanctuary | Patch tuning read | 0 | 0 |
+| SP60 | Casanova Cave | Patch tuning read | 0 | 0 |
+| SP61 | Refined Living Room | No tuning in patch data | 0 | 0 |
+| SP62 | Business Chic | No tuning in patch data | 0 | 0 |
+| SP63 | Sleek Bathroom | Patch tuning read | 0 | 0 |
+| SP64 | Sweet Allure | No tuning in patch data | 0 | 0 |
+| SP65 | Restoration Workshop | Patch tuning read | 0 | 0 |
+| SP66 | Golden Years | No tuning in patch data | 0 | 0 |
+| SP67 | Kitchen Clutter | Patch tuning read | 0 | 0 |
+| SP68 | SpongeBob's House | Patch tuning read | 0 | 0 |
+| SP69 | Autumn Apparel | No tuning in patch data | 0 | 0 |
+| SP70 | SpongeBob Kid's Room | Patch tuning not decoded | 3 | 2 |
+| SP71 | Grange Mudroom | No tuning in patch data | 0 | 0 |
+| SP72 | Essential Glam | No tuning in patch data | 0 | 0 |
+| SP73 | Modern Retreat | No tuning in patch data | 0 | 0 |
+| SP74 | Garden to Table | No tuning in patch data | 0 | 0 |
+| SP75 | Wonderland Playroom | Patch tuning read | 0 | 0 |
+| SP76 | Silver Screen Style | No tuning in patch data | 0 | 0 |
+| SP77 | Tea Time Solarium | Patch tuning read | 0 | 0 |
+| SP78 | Lady Bridgerton's Masquerade Ball Fashion | No tuning in patch data | 0 | 0 |
+| SP79 | Lady Bridgerton's Masquerade Ballroom | No tuning in patch data | 0 | 0 |
+| SP80 | Music Den | No tuning in patch data | 0 | 0 |
+| SP81 | Prairie Dreams | No tuning in patch data | 0 | 0 |
+| SP82 | Yard Charm | Patch tuning not decoded | 3 | 2 |
+| SP83 | Mean Girls Capsule | No tuning in patch data | 0 | 0 |
+| SP84 | Clueless Capsule | No tuning in patch data | 0 | 0 |
+| SP87 | Coach RePurposed Capsule | No tuning in patch data | 0 | 0 |
+
+### Free packs
+
+| Pack | Name | Level | Sections | Chapters |
+|---|---|---|---|---|
+| FP01 | Holiday | Patch tuning read | 3 | 2 |

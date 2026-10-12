@@ -1,0 +1,50 @@
+id	slug	title	part
+0.01	reading-guide	Reading guide, glossary and how to reproduce	0 Start here
+0.02	architecture	Architecture: the executable, the engine library and the Python	0 Start here
+0.03	tuning-system	The tuning system	0 Start here
+0.04	tests-loot-effects	Tests, loot and effects: the glue every system uses	0 Start here
+1.01	time-scheduling-loading	Time, scheduling and lot loading	1 Engine
+1.02	saves-persistence	Saves and persistence	1 Engine
+1.03	performance-lod	Performance, budgets and level of detail	1 Engine
+1.04	debug-cheats-telemetry	Debug tools, cheats and telemetry	1 Engine
+2.01	lots-venues-rooms	Lots, venues and rooms	2 The world
+2.02	objects-states-wear	Objects: components, states and wear	2 The world
+2.03	build-buy-placement	Build/Buy, placement and slots	2 The world
+2.04	weather-seasons-ground	Weather, seasons and the ground	2 The world
+2.05	sky-and-moon	The sky and the moon	2 The world
+2.06	worlds-regions-travel	Worlds, regions, streets and travel	2 The world
+2.07	neighbourhood-systems	Neighbourhood systems: civic policies, eco footprint, narratives	2 The world
+3.01	create-a-sim	Create a Sim: how a person is built	3 The Sim
+3.02	cas-sculpting-parts	Sculpting and parts: how sliders, hair and clothes change the model	3 The Sim
+3.03	needs-statistics	Needs, statistics and commodities	3 The Sim
+3.04	autonomy	Autonomy: how a Sim chooses what to do	3 The Sim
+3.05	interactions-postures-routing	Interactions, postures and routing	3 The Sim
+3.06	animation	Animation, thought balloons and the hand-off to the client	3 The Sim
+3.07	personality-feelings	Personality and feelings: traits, emotions, wants, aspirations	3 The Sim
+3.08	relationships-socials	Relationships, socials and memories	3 The Sim
+3.09	life-cycle	Life cycle: aging, babies, family and death	3 The Sim
+3.10	skills-careers-school	Skills, careers and school	3 The Sim
+3.11	occults	Occults and the supernatural	3 The Sim
+3.12	pets-horses	Pets and horses	3 The Sim
+3.13	health-luck-fame	Sickness, luck, fame and other Sim states	3 The Sim
+4.01	situations-npcs	Situations, roles and NPC scheduling	4 Society
+4.02	story-progression-townies	Story progression, households and townies	4 Society
+4.03	groups-factions	Clubs, organizations, clans and factions	4 Society
+4.04	events-holidays-festivals	Holidays, festivals, live events and competitions	4 Society
+4.05	scenarios-moments	Scenarios, pivotal moments and calls to action	4 Society
+5.01	money-bills-rewards	Money, bills, perks and rewards	5 Economy
+5.02	businesses	Businesses: retail, restaurants, vet clinics, small business	5 Economy
+6.01	crafting-cooking	Crafting, cooking and making things	6 Activities
+6.02	gardening-fishing-collecting	Gardening, fishing and collecting	6 Activities
+6.03	pack-systems	Other pack systems: temples, kingdoms, relics and more	6 Activities
+7.01	ui-dialogs-tutorials	UI, dialogs, notifications and tutorials	7 Presentation
+7.02	audio-vfx-camera	Audio, VFX and the camera	7 Presentation
+7.03	thumbnails-gallery	Thumbnails and the gallery	7 Presentation
+8.01	package-files	Package files and resource types	8 Data formats
+8.02	tuning-formats	Tuning XML and binary delta tuning	8 Data formats
+8.03	sim-cas-files	Sim and CAS files	8 Data formats
+8.04	save-file-format	The save file format	8 Data formats
+9.01	numbers-index	Every number, in one table	9 Appendices
+9.02	module-index	Module index: where each part of the code is explained	9 Appendices
+9.03	coverage-and-gaps	Coverage and known gaps	9 Appendices
+9.04	pack-index	Pack index: what each pack adds, chapter by chapter	9 Appendices

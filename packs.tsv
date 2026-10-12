@@ -1,0 +1,122 @@
+# Every pack id with its English name, read from base delta module tuning ui.ui_tuning UiTuning.PACK_SPECIFIC_DATA
+# (filter_name and credits_title keys) resolved in Data/Client/Strings_ENG_US.package STBL 0054935F2685AD48.
+# Reproduce by reading PACK_SPECIFIC_DATA from the base delta module tuning and resolving its filter_name and credits_title keys in the base string table. installed = runs in this install.
+pack	type	name	credits_title	installed
+BASE_GAME	BASE	Base Game	Base Game	yes
+EP01	EXPANSION_PACK	Get To Work	Get to Work	no
+EP02	EXPANSION_PACK	Get Together	Get Together	no
+EP03	EXPANSION_PACK	City Living	City Living	no
+EP04	EXPANSION_PACK	Cats & Dogs	Cats & Dogs	yes
+EP05	EXPANSION_PACK	Seasons	Seasons	no
+EP06	EXPANSION_PACK	Get Famous	Get Famous	yes
+EP07	EXPANSION_PACK	Island Living	Island Living	no
+EP08	EXPANSION_PACK	Discover University	Discover University	no
+EP09	EXPANSION_PACK	Eco Lifestyle	Eco Lifestyle	yes
+EP10	EXPANSION_PACK	Snowy Escape	Snowy Escape	no
+EP11	EXPANSION_PACK	Cottage Living	Cottage Living	no
+EP12	EXPANSION_PACK	High School Years	High School Years	yes
+EP13	EXPANSION_PACK	Growing Together	Growing Together	no
+EP14	EXPANSION_PACK	Horse Ranch	Horse Ranch	no
+EP15	EXPANSION_PACK	For Rent	For Rent	no
+EP16	EXPANSION_PACK	Lovestruck	Lovestruck	no
+EP17	EXPANSION_PACK	Life & Death	Life & Death	no
+EP18	EXPANSION_PACK	Businesses & Hobbies	Businesses & Hobbies	no
+EP19	EXPANSION_PACK	Enchanted by Nature	Enchanted by Nature	no
+EP20	EXPANSION_PACK	Adventure Awaits	Adventure Awaits	no
+EP21	EXPANSION_PACK	Royalty & Legacy	Royalty & Legacy	no
+FP01	FREE_PACK	Holiday	-	no
+GP01	GAME_PACK	Outdoor Retreat	-	no
+GP02	GAME_PACK	Spa Day	Spa Day	no
+GP03	GAME_PACK	Dine Out	Dine Out	no
+GP04	GAME_PACK	Vampires	Vampires	yes
+GP05	GAME_PACK	Parenthood	Parenthood	no
+GP06	GAME_PACK	Jungle Adventure	Jungle Adventure	no
+GP07	GAME_PACK	StrangerVille	StrangerVille	no
+GP08	GAME_PACK	Realm of Magic	Realm of Magic	no
+GP09	GAME_PACK	Journey to Batuu	<i>Star Wars™:</i> Journey to Batuu	no
+GP10	GAME_PACK	Dream Home Decorator	Dream Home Decorator	no
+GP11	GAME_PACK	My Wedding Stories	My Wedding Stories	no
+GP12	GAME_PACK	Werewolves	Werewolves	yes
+SP01	STUFF_PACK	Luxury Party	Luxury Party Stuff	yes
+SP02	STUFF_PACK	Perfect Patio	Perfect Patio Stuff	no
+SP03	STUFF_PACK	Cool Kitchen	Cool Kitchen Stuff	no
+SP04	STUFF_PACK	Spooky Stuff	Spooky Stuff	no
+SP05	STUFF_PACK	Movie Hangout	Movie Hangout Stuff	no
+SP06	STUFF_PACK	Romantic Garden	Romantic Garden Stuff	no
+SP07	STUFF_PACK	Kids Room	Kids Room Stuff	no
+SP08	STUFF_PACK	Backyard	Backyard Stuff	no
+SP09	STUFF_PACK	Vintage Glamour	Vintage Glamour Stuff	no
+SP10	STUFF_PACK	Bowling Night	Bowling Night Stuff	no
+SP11	STUFF_PACK	Fitness	Fitness Stuff	no
+SP12	STUFF_PACK	Toddler	Toddler Stuff	no
+SP13	STUFF_PACK	Laundry Day	Laundry Day Stuff	no
+SP14	STUFF_PACK	My First Pet	My First Pet Stuff	no
+SP15	STUFF_PACK	Moschino	Moschino	no
+SP16	STUFF_PACK	Tiny Living	Tiny Living	no
+SP17	STUFF_PACK	Nifty Knitting	Nifty Knitting	no
+SP18	STUFF_PACK	Paranormal	Paranormal	no
+SP20	STUFF_PACK	Throwback Fit	Throwback Fit	no
+SP21	STUFF_PACK	Country Kitchen	Country Kitchen	no
+SP22	STUFF_PACK	Bust The Dust	Bust The Dust	no
+SP23	STUFF_PACK	Courtyard Oasis	Courtyard Oasis	no
+SP24	STUFF_PACK	Fashion Street	Fashion Street	no
+SP25	STUFF_PACK	Industrial Loft	Industrial Loft	no
+SP26	STUFF_PACK	Incheon Arrivals	Incheon Arrivals	no
+SP28	STUFF_PACK	Modern Menswear	Modern Menswear	no
+SP29	STUFF_PACK	Blooming Rooms	Blooming Rooms	no
+SP30	STUFF_PACK	Carnaval Streetwear	Carnaval Streetwear	no
+SP31	STUFF_PACK	Décor to the Max	Décor to the Max	no
+SP32	STUFF_PACK	Moonlight Chic	Moonlight Chic	no
+SP33	STUFF_PACK	Little Campers	Little Campers	no
+SP34	STUFF_PACK	First Fits	First Fits	no
+SP35	STUFF_PACK	Desert Luxe	Desert Luxe	no
+SP36	STUFF_PACK	Pastel Pop	Pastel Pop	no
+SP37	STUFF_PACK	Everyday Clutter	Everyday Clutter	no
+SP38	STUFF_PACK	Simtimates Collection	Simtimates Collection	no
+SP39	STUFF_PACK	Bathroom Clutter	Bathroom Clutter	no
+SP40	STUFF_PACK	Greenhouse Haven	Greenhouse Haven	no
+SP41	STUFF_PACK	Basement Treasures	Basement Treasures	no
+SP42	STUFF_PACK	Grunge Revival	Grunge Revival	yes
+SP43	STUFF_PACK	Book Nook	Book Nook	no
+SP44	STUFF_PACK	Poolside Splash	Poolside Splash	no
+SP45	STUFF_PACK	Modern Luxe	Modern Luxe	no
+SP46	STUFF_PACK	Home Chef Hustle	Home Chef Hustle	no
+SP47	STUFF_PACK	Castle Estate	Castle Estate	no
+SP48	STUFF_PACK	Goth Galore	Goth Galore	no
+SP49	STUFF_PACK	Crystal Creations	Crystal Creations	no
+SP50	STUFF_PACK	Urban Homage	Urban Homage	no
+SP51	STUFF_PACK	Party Essentials	Party Essentials	no
+SP52	STUFF_PACK	Riviera Retreat	Riviera Retreat	no
+SP53	STUFF_PACK	Cozy Bistro	Cozy Bistro	no
+SP54	STUFF_PACK	Artist Studio	Artist Studio	no
+SP55	STUFF_PACK	Storybook Nursery	Storybook Nursery	no
+SP56	STUFF_PACK	Sweet Slumber Party	Sweet Slumber Party	no
+SP57	STUFF_PACK	Cozy Kitsch	Cozy Kitsch	no
+SP58	STUFF_PACK	Comfy Gamer	Comfy Gamer	no
+SP59	STUFF_PACK	Secret Sanctuary	Secret Sanctuary	no
+SP60	STUFF_PACK	Casanova Cave	Casanova Cave	no
+SP61	STUFF_PACK	Refined Living Room	Refined Living Room	no
+SP62	STUFF_PACK	Business Chic	Business Chic	no
+SP63	STUFF_PACK	Sleek Bathroom	Sleek Bathroom	no
+SP64	STUFF_PACK	Sweet Allure	Sweet Allure	no
+SP65	STUFF_PACK	Restoration Workshop	Restoration Workshop	no
+SP66	STUFF_PACK	Golden Years	Golden Years	no
+SP67	STUFF_PACK	Kitchen Clutter	Kitchen Clutter	no
+SP68	STUFF_PACK	SpongeBob's House	SpongeBob's House	no
+SP69	STUFF_PACK	Autumn Apparel	Autumn Apparel	no
+SP70	STUFF_PACK	SpongeBob Kid's Room	SpongeBob Kid's Room	no
+SP71	STUFF_PACK	Grange Mudroom	Grange Mudroom	no
+SP72	STUFF_PACK	Essential Glam	Essential Glam	no
+SP73	STUFF_PACK	Modern Retreat	Modern Retreat	no
+SP74	STUFF_PACK	Garden to Table	Garden to Table	no
+SP75	STUFF_PACK	Wonderland Playroom	Wonderland Playroom	no
+SP76	STUFF_PACK	Silver Screen Style	Silver Screen Style	no
+SP77	STUFF_PACK	Tea Time Solarium	Tea Time Solarium	no
+SP78	STUFF_PACK	Lady Bridgerton's Masquerade Ball Fashion	Lady Bridgerton's Masquerade Ball Fashion	no
+SP79	STUFF_PACK	Lady Bridgerton's Masquerade Ballroom	Lady Bridgerton's Masquerade Ballroom	no
+SP80	STUFF_PACK	Music Den	Music Den	no
+SP81	STUFF_PACK	Prairie Dreams	Prairie Dreams	no
+SP82	STUFF_PACK	Yard Charm	Yard Charm	no
+SP83	STUFF_PACK	Mean Girls Capsule	Mean Girls Capsule	no
+SP84	STUFF_PACK	Clueless Capsule	Clueless Capsule	no
+SP87	STUFF_PACK	Coach RePurposed Capsule	-	no

@@ -1,0 +1,34 @@
+[book]
+title = "How The Sims 4 Works"
+authors = [
+  "sudo-ezekiel (direction and publication)",
+  "AI agents (Anthropic Claude): writing, fact-checking and coordination",
+]
+description = "An unofficial reverse-engineering book about The Sims 4, version 1.128.90.1030: how its systems work and the numbers they use, read from the game's own files. For players, modders, designers and programmers. Not affiliated with Electronic Arts or Maxis."
+language = "en"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+no-section-label = true
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/sudo-ezekiel/how-the-sims-4-works"
+edit-url-template = "https://github.com/sudo-ezekiel/how-the-sims-4-works/edit/main/{path}"
+site-url = "/how-the-sims-4-works/"
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
+
+[output.html.search]
+enable = true
+limit-results = 30
+use-boolean-and = true
+
+[output.html.fold]
+enable = true
+level = 1
