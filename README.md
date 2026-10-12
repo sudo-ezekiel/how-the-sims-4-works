@@ -22,7 +22,7 @@ Open an issue with the chapter id, the claim as written, and what you found in t
 
 ## Building locally
 
-Install mdBook and mdbook-mermaid. In this directory, run `mdbook-mermaid install .` once: it writes the two scripts `book.toml` loads (`mermaid.min.js` and `mermaid-init.js`). Then run `mdbook build` (or `mdbook serve`); the site is written to `book/`. The chapters are plain Markdown in `src/`; `chapters.tsv` lists them, `packs.tsv` lists the 118 pack ids of the game's UI tuning with the English name the game shows, and `src/glossary.md` was generated from the terms each chapter defines.
+Install mdBook and mdbook-mermaid. In this directory, run `mdbook-mermaid install .` once: it writes `mermaid.min.js`. The book keeps its own `mermaid-init.js` and `book.toml`, so if the install changed either, restore them with `git checkout -- mermaid-init.js book.toml`. Then run `mdbook build` (or `mdbook serve`); the site is written to `book/`. The chapters are plain Markdown in `src/`; `chapters.tsv` lists them, `packs.tsv` lists the 118 pack ids of the game's UI tuning with the English name the game shows, and `src/glossary.md` was generated from the terms each chapter defines. The look (the Day and Night themes) is `sims-theme.css`, `sims-theme.js` and `theme/head.hbs`, which loads the Nunito and JetBrains Mono fonts from Google Fonts.
 
 ## Licence
 

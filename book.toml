@@ -22,7 +22,8 @@ preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/sudo-ezekiel/how-the-sims-4-works"
 edit-url-template = "https://github.com/sudo-ezekiel/how-the-sims-4-works/edit/main/{path}"
 site-url = "/how-the-sims-4-works/"
-additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-css = ["sims-theme.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js", "sims-theme.js"]
 
 [output.html.search]
 enable = true

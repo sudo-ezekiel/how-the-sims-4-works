@@ -1,0 +1,311 @@
+/* How The Sims 4 Works: the Day (light) and Night (navy) themes.
+   Design: DESIGN-2026-10-12.md. Loaded after mdBook's own CSS through additional-css, so a rule here wins over the
+   stock rule of the same specificity. The Markdown is untouched; sims-theme.js adds the few classes used below. */
+
+:root {
+    --content-max-width: 840px;
+    --mono-font: "JetBrains Mono", "SFMono-Regular", Consolas, "DejaVu Sans Mono", monospace;
+    --sims-font: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* One colour per part of the book: a dot in the sidebar and the rule under each chapter title. */
+[data-part="0"] { --part: #4A6FA5; }
+[data-part="1"] { --part: #5B6B7A; }
+[data-part="2"] { --part: #3E9C5A; }
+[data-part="3"] { --part: #2E8FD6; }
+[data-part="4"] { --part: #7B5CC9; }
+[data-part="5"] { --part: #C2871A; }
+[data-part="6"] { --part: #D9742B; }
+[data-part="7"] { --part: #D2588F; }
+[data-part="8"] { --part: #1F8F8B; }
+[data-part="9"] { --part: #6E7D8C; }
+[data-part] { --part-shown: var(--part); }
+.navy[data-part], .navy [data-part] { --part-shown: color-mix(in srgb, var(--part) 85%, white); }
+
+.light {
+    --bg: #F4F8FC;
+    --fg: #1C2B3A;
+    --sidebar-bg: #E8F1FA;
+    --sidebar-fg: #2B3E52;
+    --sidebar-non-existant: #8496A8;
+    --sidebar-active: #1769B5;
+    --sidebar-spacer: #D5E2EE;
+    --scrollbar: #9DB3C8;
+    --icons: #5A6B7D;
+    --icons-hover: #16518F;
+    --links: #1769B5;
+    --inline-code-color: #A03A6B;
+    --theme-popup-bg: #FFFFFF;
+    --theme-popup-border: #D5E2EE;
+    --theme-hover: #E8F1FA;
+    --quote-bg: #EAF3FC;
+    --quote-border: #BFD9F0;
+    --table-border-color: #D5E2EE;
+    --table-header-bg: #DCEBF8;
+    --table-alternate-bg: #F6F9FC;
+    --searchbar-border-color: #BFD9F0;
+    --searchbar-bg: #FFFFFF;
+    --searchbar-fg: #1C2B3A;
+    --searchbar-shadow-color: #BFD9F0;
+    --searchresults-header-fg: #5A6B7D;
+    --searchresults-border-color: #D5E2EE;
+    --searchresults-li-bg: #E8F1FA;
+    --search-mark-bg: #FFEFC7;
+
+    --sims-surface: #FFFFFF;
+    --sims-shadow: 0 1px 2px rgba(22, 81, 143, 0.06), 0 6px 20px rgba(22, 81, 143, 0.07);
+    --sims-topbar-bg: #1A73B8;
+    --sims-topbar-fg: #FFFFFF;
+    --sims-topbar-border: #1A73B8;
+    --sims-heading: #16518F;
+    --sims-text-2: #5A6B7D;
+    --sims-link-hover: #0F4F8C;
+    --sims-code-bg: #EEF4FA;
+    --sims-active-bg: #1A73B8;
+    --sims-active-fg: #FFFFFF;
+    --sims-hover-bg: #D9E8F6;
+    --sims-obs-bg: #DDF4E3;
+    --sims-obs-fg: #14602E;
+    --sims-inf-bg: #FFEFC7;
+    --sims-inf-fg: #7A4B00;
+    --sims-card-bg: #EAF3FC;
+    --sims-card-border: #BFD9F0;
+    --sims-card-fg: #3A5570;
+    --sims-card-rule: #14602E;
+}
+
+.navy {
+    --bg: #0F1C2E;
+    --fg: #D9E4F0;
+    --sidebar-bg: #13233A;
+    --sidebar-fg: #C5D3E2;
+    --sidebar-non-existant: #6D8098;
+    --sidebar-active: #5CC8F2;
+    --sidebar-spacer: #27405C;
+    --scrollbar: #3A5574;
+    --icons: #93A6BC;
+    --icons-hover: #D9E4F0;
+    --links: #5CC8F2;
+    --inline-code-color: #F0A6C8;
+    --theme-popup-bg: #142539;
+    --theme-popup-border: #27405C;
+    --theme-hover: #1B314B;
+    --quote-bg: #182C45;
+    --quote-border: #2B4664;
+    --table-border-color: #27405C;
+    --table-header-bg: #1E3550;
+    --table-alternate-bg: #182C45;
+    --searchbar-border-color: #2B4664;
+    --searchbar-bg: #142539;
+    --searchbar-fg: #D9E4F0;
+    --searchbar-shadow-color: #0B1626;
+    --searchresults-header-fg: #93A6BC;
+    --searchresults-border-color: #27405C;
+    --searchresults-li-bg: #1B314B;
+    --search-mark-bg: #4A3608;
+
+    --sims-surface: #142539;
+    --sims-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 6px 20px rgba(0, 0, 0, 0.25);
+    --sims-topbar-bg: #13233A;
+    --sims-topbar-fg: #D9E4F0;
+    --sims-topbar-border: #27405C;
+    --sims-heading: #8FD3F4;
+    --sims-text-2: #93A6BC;
+    --sims-link-hover: #8FDBF7;
+    --sims-code-bg: #0B1626;
+    --sims-active-bg: #1F6FB2;
+    --sims-active-fg: #FFFFFF;
+    --sims-hover-bg: #1B314B;
+    --sims-obs-bg: #17402B;
+    --sims-obs-fg: #8FE0A8;
+    --sims-inf-bg: #4A3608;
+    --sims-inf-fg: #F5CF6A;
+    --sims-card-bg: #182C45;
+    --sims-card-border: #2B4664;
+    --sims-card-fg: #A9BCD1;
+    --sims-card-rule: #8FE0A8;
+}
+
+html { font-family: var(--sims-font); }
+
+/* Top bar: the blue frame of the game's Live Mode panels. */
+.light #menu-bar, .navy #menu-bar {
+    background-color: var(--sims-topbar-bg);
+    border-block-end-color: var(--sims-topbar-border);
+}
+.light #menu-bar .menu-title, .navy #menu-bar .menu-title,
+.light #menu-bar .left-buttons i, .navy #menu-bar .left-buttons i,
+.light #menu-bar .right-buttons i, .navy #menu-bar .right-buttons i {
+    color: var(--sims-topbar-fg);
+}
+#menu-bar .menu-title { font-weight: 700; font-size: 2rem; letter-spacing: 0.01em; }
+.theme-popup { border-radius: 12px; overflow: hidden; color: var(--fg); box-shadow: var(--sims-shadow); }
+.theme-popup .theme { font-family: var(--sims-font); font-weight: 600; padding: 6px 18px; }
+
+/* The page: a white panel on a pale blue ground. */
+.light .content main, .navy .content main {
+    background: var(--sims-surface);
+    border: 1px solid var(--table-border-color);
+    border-radius: 18px;
+    box-shadow: var(--sims-shadow);
+    padding: 4px 40px 36px;
+    margin-block: 18px 28px;
+}
+.content main { font-size: 1.7rem; line-height: 1.65; }
+.content main li { margin-block: 0.35em; }
+
+.content main h1, .content main h2, .content main h3, .content main h4 { color: var(--sims-heading); }
+.content main .header:link, .content main .header:visited { color: var(--sims-heading); }
+.content main h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-block: 0.9em 0.6em;
+    padding-block-end: 0.35em;
+    border-block-end: 3px solid var(--part-shown, var(--sims-card-border));
+}
+.content main h2 { font-size: 2.3rem; font-weight: 700; line-height: 1.3; }
+.content main h3 { font-size: 1.85rem; font-weight: 700; }
+.content main h4 { font-size: 1.7rem; font-weight: 700; }
+
+.content main a:link:not(.header), .content main a:visited:not(.header) { color: var(--links); text-decoration: none; }
+.content main a:not(.header):hover {
+    color: var(--sims-link-hover);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+/* The check line under every title, shown as a status card. */
+.content main > h1 + p:has(> em:only-child), .content main p.sims-check {
+    background: var(--sims-card-bg);
+    border: 1px solid var(--sims-card-border);
+    border-inline-start: 3px solid var(--sims-card-rule);
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 1.45rem;
+    line-height: 1.55;
+    color: var(--sims-card-fg);
+}
+.content main > h1 + p:has(> em:only-child) > em, .content main p.sims-check > em { font-style: normal; }
+
+/* Observed and Inferred labels as pills, like the game's moodlet and skill tags. */
+.content main strong.sims-claim {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.55;
+    padding: 0 0.75em;
+    border-radius: 999px;
+    margin-inline-end: 0.3em;
+    vertical-align: 0.1em;
+}
+.content main strong.sims-claim-observed { background: var(--sims-obs-bg); color: var(--sims-obs-fg); }
+.content main strong.sims-claim-inferred { background: var(--sims-inf-bg); color: var(--sims-inf-fg); }
+
+/* Tables: rounded, striped, scrolling sideways on a phone. Long tables become their own scroll box so the header can
+   stay in view (a sticky header cannot work inside mdBook's sideways-scrolling wrapper otherwise). */
+.content main .table-wrapper {
+    width: fit-content;
+    max-width: 100%;
+    margin: 1.2em auto;
+    border: 1px solid var(--table-border-color);
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background: var(--sims-surface);
+}
+.content main table { margin: 0; border-collapse: separate; border-spacing: 0; font-size: 1.45rem; line-height: 1.45; }
+.content main table td, .content main table th {
+    border: none;
+    border-block-end: 1px solid var(--table-border-color);
+    padding: 6px 14px;
+}
+.content main table thead th, .content main table thead td {
+    background: var(--table-header-bg);
+    color: var(--sims-heading);
+    font-weight: 700;
+    text-align: start;
+}
+.content main table tbody tr:last-child td { border-block-end: none; }
+.content main table tbody tr:nth-child(2n) { background: var(--table-alternate-bg); }
+.content main .table-wrapper.sims-long { max-height: min(78vh, 900px); overflow: auto; }
+.content main .table-wrapper.sims-long thead th { position: sticky; top: 0; z-index: 1; }
+html[data-page="9.01"] .content main table { font-size: 1.35rem; }
+
+/* Code. */
+.content main pre { border: 1px solid var(--table-border-color); border-radius: 10px; }
+.light .content main pre > code, .navy .content main pre > code { background: var(--sims-code-bg); border-radius: 10px; }
+.content main :not(pre) > code { background: var(--sims-code-bg); border-radius: 5px; padding: 0.1em 0.35em; font-size: 0.92em; }
+.content main pre.mermaid { border: none; background: none; text-align: center; }
+
+/* Sidebar: part titles with their colour dot, chapters as pills. */
+.sidebar { font-family: var(--sims-font); }
+.sidebar .chapter li.part-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 1.4em 0 0.35em;
+    padding-inline-start: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sims-text-2);
+}
+.sidebar .chapter li.part-title::before {
+    content: "";
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--part-shown, var(--sims-text-2));
+}
+.sidebar .chapter li.chapter-item { margin-block-start: 2px; line-height: 1.45; }
+.sidebar .chapter li a {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 1.45rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+.sidebar .chapter li a:hover { background: var(--sims-hover-bg); color: var(--sidebar-fg); text-decoration: none; }
+.sidebar .chapter li a.active { background: var(--sims-active-bg); color: var(--sims-active-fg); font-weight: 700; }
+
+/* Search. */
+#searchbar {
+    border-radius: 999px;
+    padding: 8px 18px;
+    border: 1px solid var(--searchbar-border-color);
+    background: var(--searchbar-bg);
+}
+ul#searchresults li { border-radius: 10px; }
+ul#searchresults li.focus, ul#searchresults li:hover { background-color: var(--sims-hover-bg); }
+
+/* Landing page (0.01): a larger title and the opening section as a welcome panel. */
+html[data-page="0.01"] .content main h1 { font-size: 3.6rem; }
+html[data-page="0.01"] .content main > h2:first-of-type {
+    background: var(--sims-card-bg);
+    border: 1px solid var(--sims-card-border);
+    border-block-end: none;
+    border-radius: 16px 16px 0 0;
+    padding: 20px 24px 4px;
+    margin-block-end: 0;
+}
+html[data-page="0.01"] .content main > h2:first-of-type + p {
+    background: var(--sims-card-bg);
+    border: 1px solid var(--sims-card-border);
+    border-block-start: none;
+    border-radius: 0 0 16px 16px;
+    padding: 4px 24px 20px;
+    margin-block-start: 0;
+}
+
+@media only screen and (max-width: 620px) {
+    .light .content main, .navy .content main { padding: 2px 16px 24px; border-radius: 14px; margin-block: 10px 20px; }
+    .content main { font-size: 1.6rem; }
+    .content main h1 { font-size: 2.5rem; }
+    #menu-bar .menu-title { font-size: 1.7rem; }
+    html[data-page="0.01"] .content main h1 { font-size: 2.8rem; }
+}
