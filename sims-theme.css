@@ -2,6 +2,29 @@
    Design: DESIGN-2026-10-12.md. Loaded after mdBook's own CSS through additional-css, so a rule here wins over the
    stock rule of the same specificity. The Markdown is untouched; sims-theme.js adds the few classes used below. */
 
+/* Fonts are served with the book (src/typefaces, SIL Open Font License 1.1), Latin subset, variable weight. */
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200 1000;
+    src: url("typefaces/nunito-latin-wght-normal.woff2") format("woff2-variations");
+}
+@font-face {
+    font-family: "Nunito";
+    font-style: italic;
+    font-display: swap;
+    font-weight: 200 1000;
+    src: url("typefaces/nunito-latin-wght-italic.woff2") format("woff2-variations");
+}
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100 800;
+    src: url("typefaces/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations");
+}
+
 :root {
     --content-max-width: 840px;
     --mono-font: "JetBrains Mono", "SFMono-Regular", Consolas, "DejaVu Sans Mono", monospace;
